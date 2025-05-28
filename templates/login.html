@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/static/styles.css">
+<script src="/static/script.js"></script>
+
+
+</head>
+<body>
+  <div class="signup-container">
+    <header class="logo"><strong>SMART CAREER GUIDANCE</strong></header>
+
+    <form class="signup-box" method="POST" action="/signup">
+      <h2>Sign up</h2>
+      <p class="subtext">Sign up to continue</p>
+
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+
+      <button type="submit" class="btn primary-btn">Sign up</button>
+
+      <label class="remember-me">
+        <input type="checkbox" name="remember" /> Remember me
+      </label>
+
+      <p class="access-quickly">ACCESS QUICKLY</p>
+      <div class="social-buttons">
+        <button type="button" class="btn social-btn">Google</button>
+        <button type="button" class="btn social-btn">LinkedIn</button>
+        <button type="button" class="btn social-btn">Microsoft</button>
+      </div>
+
+      <p class="signin-text">
+        Already have an account? <a href="/login">Sign in</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
